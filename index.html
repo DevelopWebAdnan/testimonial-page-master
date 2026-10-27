@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Testimonial Page | devChallenges.io</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+      .sora-regular {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        color: #52525A;
+      }
+
+      .testimonial {
+        border: 5px dashed saddlebrown;
+      }
+      .testimonial-content {
+        display: flex;
+      }
+
+      .reviewers-content {
+        border: 5px dashed salmon;
+      }
+      .reviewers-content-image {
+        background-color: #F5C044;
+        width: fit-content;
+        /* color: #FFFFFF; */
+        border-radius: 50%;
+        padding: 5px;
+      }
+      .reviewers-content-image img {
+        /* color: #FFFFFF; */
+        width: 100%;
+      }
+      .section-title {
+        font-size: 2.25rem;
+        color: #18181B;
+      }
+      .review-description {
+        font-size: 1.25rem;
+      }
+      .checklists > li {
+        font-size: 0.875rem;
+        display: flex;
+      }
+
+      .cards-container {
+        border: 5px dashed salmon;
+      }
+      .card-title {
+        font-weight: 700;
+                color: #18181B;
+      }
+      .card-title, .card-review {
+        font-size: 1rem;
+      }
+      
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+
+      /* responsive styles */
+      @media screen and (max-width: 576px) {
+        .testimonial-content {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body class="sora-regular">
+
+  
+<main>
+  <section class="testimonial">
+    <div class="testimonial-content">
+
+      <div class="reviewers-content">
+        ⭐️
+        <div class="reviewers-content-image">
+          <img src="resources/Star_fill_gray.svg" alt="Star_fill_gray icon">
+        </div>
+        <h1 class="section-title">Reviewers</h1>
+        <p class="review-description">Reviewers is where people can access guidelines, checklists, and other tools to assist them in reviewing papers or manuscripts. It provides a structured approach to ensure that the review process is thorough, efficient, and consistent.</p>
+        <ul class="checklists">
+          <li>
+            <img src="resources/Done_ring_round_fill.svg" alt="Done_ring_round_fill icon">
+            <p>Checklist to Review an Academic Paper</p>
+          </li>
+          <li>
+            <img src="resources/Done_ring_round_fill.svg" alt="Done_ring_round_fill icon">
+            <p>Peer Review Checklist</p>
+          </li>
+          <li>
+            <img src="resources/Done_ring_round_fill.svg" alt="Done_ring_round_fill icon">
+            <p>Checklist for Editors, Reviewers, and Authors of SPIE Journals</p>
+          </li>
+        </ul>
+      </div>
+      <div class="cards-container">
+        <div>
+          <img src="resources/google-png.png" alt="google-icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill_gray.svg" alt="Star_fill_gray icon">
+          <p class="card-title">Samantha Lee</p>
+          <p class="card-review">The checklist ensures that the review process is thorough</p>
+        </div>
+        <div>
+          <img src="resources/meta-testimonial.svg" alt="meta-testimonial icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon">
+          <p class="card-title">Rachel Patel</p>
+          <p class="card-review">I highly recommend the Writecream Business Description</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <div class="author-info">
+      Coded by <a href="#">Your Name Here</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
