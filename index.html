@@ -37,47 +37,84 @@
       }
 
       .testimonial {
-        border: 5px dashed saddlebrown;
+        background-color: #FAFAF9;
+        padding: 150px 30px;
       }
       .testimonial-content {
         display: flex;
+        gap: 50px;
+        justify-content: center;
       }
 
       .reviewers-content {
-        border: 5px dashed salmon;
+        max-width: 570px;
       }
       .reviewers-content-image {
         background-color: #F5C044;
         width: fit-content;
-        /* color: #FFFFFF; */
         border-radius: 50%;
         padding: 5px;
       }
       .reviewers-content-image img {
-        /* color: #FFFFFF; */
         width: 100%;
       }
       .section-title {
         font-size: 2.25rem;
         color: #18181B;
+        margin: 15px 0;
       }
       .review-description {
         font-size: 1.25rem;
+                line-height: 35px;
+      }
+      .checklists {
+        margin-top: 30px;
       }
       .checklists > li {
         font-size: 0.875rem;
         display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .checklists > li img {
+        margin-right: 10px;
       }
 
       .cards-container {
-        border: 5px dashed salmon;
+        width: 570px;
+        position: relative;
+      }
+      .card {
+        background-color: #FFFFFF;
+        padding: 20px 36px;
+        border-radius: 12px;
+        max-width: 350px;
+        box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+      }
+      .card-top {
+        position: relative;
+        left: 200px;
+        margin-bottom: 40px;
+      }
+      .stars-row {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      #google, #meta {
+        width: 85px;
+      }
+      .stars img {
+        margin-left: 4px;
       }
       .card-title {
         font-weight: 700;
                 color: #18181B;
+                margin-top: 10px;
       }
       .card-title, .card-review {
         font-size: 1rem;
+        line-height: 30px;
       }
       
       .author-info {
@@ -93,9 +130,36 @@
 
       /* responsive styles */
       @media screen and (max-width: 576px) {
+        .testimonial {
+        padding: 30px 10px;
+      }
         .testimonial-content {
           flex-direction: column;
         }
+
+         .cards-container {
+        width: auto;
+      }
+      .card {
+        max-width: none;
+      }
+      .card-top {
+        position: static;
+      }
+      }
+
+      /* for tablet */
+       @media screen and (min-width: 576px) and (max-width: 1035px) {
+        .testimonial {
+        padding: 50px;
+      }
+        .testimonial-content {
+          flex-direction: column;
+          align-items: center;
+        }
+        .reviewers-content {
+        max-width: none;
+      }
       }
     </style>
   </head>
@@ -107,7 +171,7 @@
     <div class="testimonial-content">
 
       <div class="reviewers-content">
-        ⭐️
+        <!-- ⭐️ -->
         <div class="reviewers-content-image">
           <img src="resources/Star_fill_gray.svg" alt="Star_fill_gray icon">
         </div>
@@ -129,13 +193,23 @@
         </ul>
       </div>
       <div class="cards-container">
-        <div>
-          <img src="resources/google-png.png" alt="google-icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill_gray.svg" alt="Star_fill_gray icon">
+        <div class="card card-top">
+          <div class="stars-row">
+            <img src="resources/google-png.png" id="google" alt="google-icon">
+            <div class="stars">
+              <img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill_gray.svg" alt="Star_fill_gray icon">
+            </div>            
+          </div>
           <p class="card-title">Samantha Lee</p>
           <p class="card-review">The checklist ensures that the review process is thorough</p>
         </div>
-        <div>
-          <img src="resources/meta-testimonial.svg" alt="meta-testimonial icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon">
+        <div class="card card-bottom">
+          <div class="stars-row">
+            <img src="resources/meta-png.png" id="meta" alt="meta icon">
+            <div class="stars">
+              <img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon"><img src="resources/Star_fill.svg" alt="Star_fill icon">
+            </div>
+          </div>
           <p class="card-title">Rachel Patel</p>
           <p class="card-review">I highly recommend the Writecream Business Description</p>
         </div>
@@ -145,7 +219,7 @@
 </main>
 
     <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
+      Coded by <a href="https://developwebadnan.github.io/web-dev-portfolio/">Adnan</a> | Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
         >devChallenges.io</a
       >.
